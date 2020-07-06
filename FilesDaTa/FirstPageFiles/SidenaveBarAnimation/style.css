@@ -1,0 +1,916 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.box{
+  width: 99vw;
+  height: 100vh;
+  background-image: url(./free-live-mobile-hd-wallpapers-3D.jpg);
+}
+
+
+
+.menu{
+  position: absolute;
+  left:95vw;
+  
+  width: 3vw;
+  height: 5vh;
+border-radius: 30vw;
+top:2vw;
+}
+.menu i{
+  color:white;
+  font-size: 2vw;;
+}
+
+
+
+.box >#side{
+  width: 15vw;
+  border-radius: 0px 20px 20px 20px;
+  height: 80vh;
+position: absolute;
+
+top:60vw;
+background-color: rgba(0, 0, 0, 0.6);
+}
+.box >#side>.close{
+ /* border: 2px solid white; */
+      position: absolute;
+      left:85%;
+      top:1%;
+  }
+  .close i{
+      font-size: 2vw;
+      color:red;
+      
+  }
+/* =========== ApplyNow ============== */
+
+
+#applyNow {
+  width: 10vw;
+  height: 5vh;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-radius: 1.5em;
+  border: transparent;
+  transform: translate(0%, 0%);
+  background: linear-gradient(90deg, #03a9f4, #f44fa5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  transition: all 0.5s;
+  outline: none;
+  position: absolute;
+  top:3vw;
+  left:2vw
+}
+
+#applyNow:hover {
+  animation: animate 8s linear infinite;
+  cursor: pointer;
+  color: rgb(52, 21, 73);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+#applyNow:before {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f44fa5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#applyNow:hover:before {
+  filter: blur(15px);
+  opacity: 1;
+  animation: animate 8s ease-out infinite;
+}
+
+
+
+/*========= Home ==============  */
+
+
+.home a {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #1670f0;
+  padding: 10px 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  overflow: hidden;
+
+}
+
+.home a :before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(225, 225, 225, 0.05);
+}
+
+.home  a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animation1 2s linear infinite;
+}
+
+@keyframes animation1 {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.home  a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animation2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animation2 {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+
+.home  a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animation3 2s linear infinite;
+}
+
+@keyframes animation3 {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+.home  a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animation4 2s linear infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes animation4 {
+  0% {
+      transform: translateY(100%);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+
+/* =============== About ==================== */
+
+.about a {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+  padding: 5px 15px;
+  font-size: 1.5vw;
+  color: #1670f0;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  overflow: hidden;
+
+}
+
+.about a :before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(225, 225, 225, 0.05);
+}
+
+.about a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animation1 2s linear infinite;
+}
+
+@keyframes animation1 {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.about  a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+ 
+  animation: animation2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animation2 {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+
+.about  a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animation3 2s linear infinite;
+}
+
+@keyframes animation3 {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+.about  a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animation4 2s linear infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes animation4 {
+  0% {
+      transform: translateY(100%);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+/* =================== About-2 =================== */
+
+
+.about-2 a {
+  position: absolute;
+  top: 48%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #1670f0;
+  padding: 5px 10px;
+  font-size: 1.5vw;
+
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  overflow: hidden;
+
+}
+
+.about-2 a :before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(225, 225, 225, 0.05);
+}
+
+.about-2 a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animation1 2s linear infinite;
+}
+
+@keyframes animation1 {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.about-2 a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animation2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animation2 {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+
+.about-2  a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animation3 2s linear infinite;
+}
+
+@keyframes animation3 {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+.about-2  a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animation4 2s linear infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes animation4 {
+  0% {
+      transform: translateY(100%);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+/*  ================== about3 ==============================*/
+
+.about-3 a {
+  position: absolute;
+  top: 58%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #1670f0;
+  padding: 5px 10px;
+  font-size: 1.5vw;
+
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  overflow: hidden;
+
+}
+
+.about-3 a :before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(225, 225, 225, 0.05);
+}
+
+.about-3 a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animation1 2s linear infinite;
+}
+
+@keyframes animation1 {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.about-3 a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animation2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animation2 {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+
+.about-3  a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animation3 2s linear infinite;
+}
+
+@keyframes animation3 {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+.about-3  a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animation4 2s linear infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes animation4 {
+  0% {
+      transform: translateY(100%);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+
+/*=================About 4 =========================== */
+
+.about-4 a {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #1670f0;
+  padding: 5px 10px;
+  font-size: 1.5vw;
+ 
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  overflow: hidden;
+
+}
+
+.about-4 a :before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(225, 225, 225, 0.05);
+}
+
+.about-4 a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animation1 2s linear infinite;
+}
+
+@keyframes animation1 {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.about-4 a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animation2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animation2 {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+
+.about-4  a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animation3 2s linear infinite;
+}
+
+@keyframes animation3 {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+.about-4  a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animation4 2s linear infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes animation4 {
+  0% {
+      transform: translateY(100%);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+
+/*=========== About 5 ========================= */
+
+.about-5 a {
+  position: absolute;
+  top: 78%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #1670f0;
+  padding: 5px 10px;
+  font-size: 1.5vw;
+
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  overflow: hidden;
+
+}
+
+.about-5 a :before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(225, 225, 225, 0.05);
+}
+
+.about-5 a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animation1 2s linear infinite;
+}
+
+@keyframes animation1 {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.about-5 a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animation2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animation2 {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+
+.about-5  a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animation3 2s linear infinite;
+}
+
+@keyframes animation3 {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+.about-5  a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animation4 2s linear infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes animation4 {
+  0% {
+      transform: translateY(100%);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* menu about */
+.menu-about{
+
+
+  width: 13vw;
+  height: 7vh;
+  
+position: absolute;
+top:11.5vw;
+left:1vw;
+text-align: end;
+opacity: 0;
+color:white;
+}
+.menu-about:hover{
+  opacity: 1;
+  transition: 2s;
+}
+
+/* menu about-2 */
+.menu-about-2{
+
+
+  width: 13vw;
+  height: 7vh;
+  
+position: absolute;
+top:16.5vw;
+left:1vw;
+text-align: end;
+opacity: 0;
+color:white;
+}
+.menu-about-2:hover{
+  opacity: 1;
+  transition: 2s;
+ 
+}
+
+/* menuabout:3 */
+.menu-about-3{
+
+
+  width: 13vw;
+  height: 7vh;
+  
+position: absolute;
+top:19.5vw;
+left:1vw;
+text-align: end;
+opacity: 0;
+color:white;
+}
+.menu-about-3:hover{
+  opacity: 1;
+  transition: 2s;
+ 
+}
+/* menu about-4 */
+.menu-about-4{
+
+
+  width: 13vw;
+  height: 7vh;
+  position: absolute;
+top:23.5vw;
+left:1vw;
+text-align: end;
+opacity: 0;
+color:white;
+}
+.menu-about-4:hover{
+  opacity: 1;
+  transition: 2s;
+ 
+}
+
+/* menu about-5 */
+.menu-about-5{
+
+
+  width: 13vw;
+  height: 7vh;
+  
+position: absolute;
+top:27.5vw;
+left:1vw;
+text-align: end;
+opacity: 0;
+color:white;
+}
+.menu-about-5:hover{
+  opacity: 1;
+  transition: 2s;
+ 
+}
+/* menu about-6 */
+
+.menu-about-6{
+
+
+  width: 13vw;
+  height: 7vh;
+  
+position: absolute;
+top:31.5vw;
+left:1vw;
+text-align: end;
+opacity: 0;
+color:white;
+}
+.menu-about-6:hover{
+  opacity: 1;
+  transition: 2s;
+ 
+}
